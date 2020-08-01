@@ -24,6 +24,7 @@ export default {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #3c4256;
+  z-index: 999;
 }
 .headerInput {
   margin: auto;

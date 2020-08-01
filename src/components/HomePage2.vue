@@ -1,19 +1,83 @@
 <template>
-  <div class="main"></div>
+  <div class="homePageTwo">
+    <h1>Who We Serve</h1>
+    <p>Explore what we can do for you.</p>
+    <div class="cardHolder">
+      <div class="cardSpace" v-for="card in cards" :key="card.index">
+        <SlidingCard :title="card.title" :content="card.content" />
+      </div>
+    </div>
+    <button class="loadButton">Load More...</button>
+  </div>
 </template>
 
 <script>
+import SlidingCard from "./SlidingCard.vue";
 export default {
   name: "HomePage2",
+  components: {
+    SlidingCard
+  },
   data() {
-    return {};
+    return {
+      cards: [
+        {
+          title: "Food Services",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          title: "Food Services",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          title: "Food Services",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      ]
+    };
   }
 };
 </script>
 
 <style scoped>
-.main {
+.homePageTwo {
   height: 100vh;
   background-color: #f7f8fc;
+  padding-top: 3rem;
+}
+.cardHolder {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+}
+.cardSpace {
+  padding: 2.5rem;
+  background-color: #ffffff;
+  margin-left: 1rem;
+}
+.loadButton {
+  background-color: #10182f;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+  padding: 1rem 3.25rem 1rem 3.25rem;
+  margin-top: 1.5rem;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.25rem;
+  line-height: 23px;
+  color: #000000;
+}
+p {
+  line-height: 18px;
+  color: #000000;
+  margin: 1.25rem;
 }
 </style>

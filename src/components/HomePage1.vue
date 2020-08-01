@@ -1,12 +1,16 @@
 <template>
-  <div class="main">
-    <img class="mainImg" alt="Girl in Mask" src="../assets/facemask.jpg" />
+  <div class="homePageOne">
+    <img
+      class="homePageOneImg"
+      alt="Girl in Mask"
+      src="../assets/facemask.jpg"
+    />
     <h1>Protecting your employees is more important than ever.</h1>
     <p>
       We’re here to make it a little easier with crowd sourced and brand
       verified information.
     </p>
-    <button class="mainButton">FIND PPE</button>
+    <button class="homePageOneButton">FIND PPE</button>
   </div>
 </template>
 
@@ -20,11 +24,11 @@ export default {
 </script>
 
 <style scoped>
-.main {
+.homePageOne {
   margin-top: 3.5rem;
   height: 100vh;
 }
-.mainImg {
+.homePageOneImg {
   height: auto;
   width: 100%;
   display: block;
@@ -32,7 +36,7 @@ export default {
   max-height: 100%;
   object-fit: cover;
 }
-.mainButton {
+.homePageOneButton {
   border: 2px solid #000000;
   margin: auto;
   width: 90%;
