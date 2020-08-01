@@ -27,6 +27,7 @@ export default {
 .homePageOne {
   margin-top: 3.5rem;
   height: 100vh;
+  width: 100%;
 }
 .homePageOneImg {
   height: auto;

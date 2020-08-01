@@ -22,6 +22,14 @@
       <router-link to="/">Brand Login</router-link> |
       <router-link to="/">Report Issue</router-link>
     </div>
+    <div class="footnote">
+      <router-link to="/">Terms of Service</router-link><br />
+      <router-link to="/">Privacy Policy</router-link><br />
+      <router-link to="/">Sitemap</router-link>
+    </div>
+    <div class="horizontalLine"></div>
+    <div class="socialMediaLogos"></div>
+    <div class="copyRight">&copy; 2020 PPE Finder by ProdEx</div>
   </div>
 </template>
 
@@ -38,10 +46,13 @@ export default {
 .footer {
   left: 0;
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: #10182f;
   z-index: 999;
+  text-align: left;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .footerNavigation {
   margin-top: 2rem;
@@ -53,6 +64,29 @@ export default {
   font-weight: normal;
   text-decoration: none;
   color: #ffffff;
+}
+.footnote {
+  font-size: 1rem;
+  line-height: 40px;
+}
+.footnote a {
+  font-size: 1rem;
+  line-height: 40px;
+  font-weight: normal;
+  text-decoration: none;
+  color: rgba(249, 250, 255, 0.4);
+}
+.horizontalLine {
+  width: 90%;
+  border: 1px solid #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.copyRight {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
 }
 h1 {
   font-size: 14px;
