@@ -45,18 +45,23 @@ export default {
 <style scoped>
 .footer {
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: #10182f;
   z-index: 999;
   text-align: left;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+}
+.logoHolder {
+  color: rgba(249, 250, 255, 0.4);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .footerNavigation {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .footerNavigation a {
   font-size: 1rem;
@@ -68,6 +73,8 @@ export default {
 .footnote {
   font-size: 1rem;
   line-height: 40px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .footnote a {
   font-size: 1rem;
@@ -81,6 +88,8 @@ export default {
   border: 1px solid #ffffff;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .copyRight {
   color: #ffffff;
