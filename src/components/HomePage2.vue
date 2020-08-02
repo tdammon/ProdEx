@@ -87,6 +87,7 @@ export default {
   line-height: 1.25rem;
   padding: 1rem 3.25rem 1rem 3.25rem;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 h1 {
   font-size: 1.5rem;

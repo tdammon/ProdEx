@@ -109,6 +109,7 @@ export default {
   display: flex;
   margin-left: 1.25rem;
   padding: 0;
+  margin-bottom: 1.5rem;
 }
 p {
   font-size: 1rem;
