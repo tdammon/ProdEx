@@ -3,7 +3,7 @@
     <img class="equiptmentImage" />
     <div class="cardText">
       <div class="cardTitle">{{ title }}</div>
-      <div class="findNow">Find Now -></div>
+      <div @click="navTo" class="findNow">Find Now -></div>
       <div class="about">About this Category</div>
     </div>
   </div>
@@ -14,6 +14,11 @@ export default {
   name: "EquiptmentCard",
   data() {
     return {};
+  },
+  methods: {
+    navTo() {
+      this.$router.push(`/FindPPE/${this.title}`);
+    }
   },
   props: ["title", "content"]
 };

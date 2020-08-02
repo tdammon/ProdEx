@@ -1,10 +1,30 @@
 <template>
   <div class="homePageThree">
     <div class="homePageThreeNavigation">
-      <router-link to="/">Masks</router-link> |
-      <router-link to="/">Sanatizer</router-link> |
-      <router-link to="/">Disinfectant</router-link> |
-      <router-link to="/">Other</router-link>
+      <a
+        class="[active === 'Masks' ? 'selected' : 'unselected']"
+        @click="setText('Masks')"
+      >
+        Masks
+      </a>
+      |
+      <a
+        class="[active === 'Sanitizers' ? 'selected' : 'unselected']"
+        @click="setText('Sanitizers')"
+        >Sanitizers</a
+      >
+      |
+      <a
+        class="[active === 'Disinfectants' ? 'selected' : 'unselected']"
+        @click="setText('Disinfectants')"
+        >Disinfectant</a
+      >
+      |
+      <a
+        class="[active === 'Other' ? 'selected' : 'unselected']"
+        @click="setText('Other')"
+        >Other</a
+      >
     </div>
     <div>
       <img
@@ -14,11 +34,11 @@
       />
     </div>
     <p>
-      Every day is taco ipsum tuesday. Let’s do a beef and a chicken, and one
-      with both. How do you feel about hard shelled tacos? Add in a few el
-      Pastor with guac and diced onions.
+      {{ text }}
     </p>
-    <button class="homePageThreeButton">Find Now -></button>
+    <button class="homePageThreeButton" @click="navTo(active)">
+      Find Now ->
+    </button>
   </div>
 </template>
 
@@ -27,7 +47,34 @@ export default {
   name: "HomePage3",
   components: {},
   data() {
-    return {};
+    return {
+      text:
+        "Air-purifying respirators protect by filtering particles out of the air the user is breathing. There are seven classes of filters for NIOSH-approved face masks, starting at ninety-five percent filtration. The N, R, and P designations refer to the filter’s oil resistance.",
+      active: "Masks"
+    };
+  },
+  methods: {
+    navTo(active) {
+      this.$router.push(`FindPPE/${active}`);
+    },
+    setText(category) {
+      if (category === "Masks") {
+        this.text =
+          "Air-purifying respirators protect by filtering particles out of the air the user is breathing. There are seven classes of filters for NIOSH-approved face masks, starting at ninety-five percent filtration. The N, R, and P designations refer to the filter’s oil resistance.";
+        this.active = "Masks";
+      } else if (category === "Sanitizers") {
+        this.text =
+          "A chemical disinfectant, usually alcohol based that reduces the number of germs on a surface. Sanitizer typically work faster than disinfectants on surfaces but are less effective. Sanitization is recommended for organic surfaces and food preparation surfaces.";
+        this.active = "Sanitizers";
+      } else if (category === "Disinfectants") {
+        this.text =
+          "A chemical, that destroys, neutralizes, or inhibits the growth of disease. Disinfectants are usually applied to inanimate objects since they are too strong to be used on living tissues.";
+        this.active = "Disinfectants";
+      } else if (category === "Other") {
+        this.text = "Other";
+        this.active = "Other";
+      }
+    }
   }
 };
 </script>

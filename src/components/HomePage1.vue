@@ -10,7 +10,9 @@
       We’re here to make it a little easier with crowd sourced and brand
       verified information.
     </p>
-    <button class="homePageOneButton">FIND PPE</button>
+    <button class="homePageOneButton" @click="navToPPE">
+      FIND PPE
+    </button>
   </div>
 </template>
 
@@ -19,6 +21,11 @@ export default {
   name: "HomePage1",
   data() {
     return {};
+  },
+  methods: {
+    navToPPE() {
+      this.$router.push("FindPPE");
+    }
   }
 };
 </script>

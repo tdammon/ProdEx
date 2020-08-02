@@ -1,21 +1,21 @@
 <template>
   <div class="home">
     <Header />
-    <N95 />
+    <Masks />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-import N95 from "@/components/N95Page1.vue";
+import Masks from "@/components/MasksPage1.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "N95Mask",
+  name: "MasksPage",
   components: {
     Header,
-    N95,
+    Masks,
     Footer
   }
 };

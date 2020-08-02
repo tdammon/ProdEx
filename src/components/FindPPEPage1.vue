@@ -1,6 +1,6 @@
 <template>
   <div class="findPPEOne">
-    <div class="breadcrumb">Home / Find PPE</div>
+    <div class="breadcrumb"><a @click="returnHome">Home</a> / Find PPE</div>
     <h1>Personal Protective Equiptment</h1>
     <div class="buttonHolder">
       <button class="filterButton">FILTER</button>
@@ -30,16 +30,21 @@ export default {
           title: "N95"
         },
         {
-          title: "Disinfectant"
+          title: "Disinfectants"
         },
         {
-          title: "Sanitizer"
+          title: "Sanitizers"
         },
         {
           title: "Other?"
         }
       ]
     };
+  },
+  methods: {
+    returnHome() {
+      this.$router.push("/");
+    }
   }
 };
 </script>
@@ -60,6 +65,9 @@ export default {
   color: #405169;
   text-align: left;
   margin-left: 1.5rem;
+}
+.breadcrumb a {
+  color: #0000ee;
 }
 .buttonHolder {
   display: flex;

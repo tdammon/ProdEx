@@ -21,6 +21,24 @@ const routes = [{
     component: () =>
       import("../views/N95.vue")
   },
+  {
+    path: "/FindPPE/Masks",
+    name: "Masks",
+    component: () =>
+      import("../views/Masks.vue")
+  },
+  {
+    path: "/FindPPE/Disinfectants",
+    name: "Disinfectants",
+    component: () =>
+      import("../views/Disinfectants.vue")
+  },
+  {
+    path: "/FindPPE/Sanitizers",
+    name: "Sanitizers",
+    component: () =>
+      import("../views/Sanitizers.vue")
+  },
 ];
 
 const router = new VueRouter({

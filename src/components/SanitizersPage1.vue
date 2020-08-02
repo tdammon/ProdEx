@@ -1,12 +1,15 @@
 <template>
-  <div class="n95Page1">
+  <div class="sanitizersPage1">
     <div class="breadcrumb">
-      <a @click="returnHome">Home</a> / <a @click="navToPPE">Find PPE</a> / N95
+      <a @click="returnHome">Home</a> / <a @click="navToPPE">Find PPE</a> /
+      Sanitizers
     </div>
-    <h1>N95 Respirator</h1>
+    <h1>Sanitizers</h1>
     <p>
-      An N95 respirator is a respiratory protective device designed to achieve a
-      very close facial fit and very efficient filtration of airborne particles.
+      A chemical disinfectant, usually alcohol based that reduces the number of
+      germs on a surface. Sanitizer typically work faster than disinfectants on
+      surfaces but are less effective. Sanitization is recommended for organic
+      surfaces and food preparation surfaces.
     </p>
     <div class="buttonHolder">
       <button class="filterButton">FILTER</button>
@@ -29,7 +32,7 @@
 import ProductCard from "./ProductCard.vue";
 
 export default {
-  name: "N95Page1",
+  name: "SanitizersPage1",
   components: {
     ProductCard
   },
@@ -86,7 +89,7 @@ export default {
 </script>
 
 <style scoped>
-.n95Page1 {
+.sanitizersPage1 {
   min-height: 100vh;
   margin-top: 3.5rem;
   padding-top: 1rem;

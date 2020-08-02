@@ -26,11 +26,15 @@ export default {
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
-          title: "Food Services",
+          title: "Assisted Living",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
-          title: "Food Services",
+          title: "Retail",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          title: "Education",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         }
       ]
@@ -49,7 +53,6 @@ export default {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
   scroll-snap-type: mandatory;
   scroll-snap-type: x mandatory;
 }

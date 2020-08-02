@@ -1,12 +1,14 @@
 <template>
-  <div class="n95Page1">
+  <div class="masksPage1">
     <div class="breadcrumb">
-      <a @click="returnHome">Home</a> / <a @click="navToPPE">Find PPE</a> / N95
+      <a @click="returnHome">Home</a> / <a @click="navToPPE">Find PPE</a> /
+      Masks
     </div>
-    <h1>N95 Respirator</h1>
+    <h1>Masks</h1>
     <p>
-      An N95 respirator is a respiratory protective device designed to achieve a
-      very close facial fit and very efficient filtration of airborne particles.
+      Loose-fitting device that creates a physical barrier between the mount and
+      nose and potential contaminants. The edges of masks are not designed to
+      form a seal.
     </p>
     <div class="buttonHolder">
       <button class="filterButton">FILTER</button>
@@ -29,7 +31,7 @@
 import ProductCard from "./ProductCard.vue";
 
 export default {
-  name: "N95Page1",
+  name: "MasksPage1",
   components: {
     ProductCard
   },
@@ -86,7 +88,7 @@ export default {
 </script>
 
 <style scoped>
-.n95Page1 {
+.masksPage1 {
   min-height: 100vh;
   margin-top: 3.5rem;
   padding-top: 1rem;

@@ -1,12 +1,15 @@
 <template>
-  <div class="n95Page1">
+  <div class="disinfectantsPage1">
     <div class="breadcrumb">
-      <a @click="returnHome">Home</a> / <a @click="navToPPE">Find PPE</a> / N95
+      <a @click="returnHome">Home</a> / <a @click="navToPPE">Find PPE</a> /
+      Disinfectants
     </div>
-    <h1>N95 Respirator</h1>
+    <h1>Disinfectants</h1>
     <p>
-      An N95 respirator is a respiratory protective device designed to achieve a
-      very close facial fit and very efficient filtration of airborne particles.
+      A chemical, that destroys, neutralizes, or inhibits the growth of disease.
+      Disinfectants are usually applied to inanimate objects since they are too
+      strong to be used on living tissues. Chemical disinfectants are not always
+      effective against spore-forming bacteria.
     </p>
     <div class="buttonHolder">
       <button class="filterButton">FILTER</button>
@@ -29,7 +32,7 @@
 import ProductCard from "./ProductCard.vue";
 
 export default {
-  name: "N95Page1",
+  name: "DisinfectantsPage1",
   components: {
     ProductCard
   },
@@ -86,7 +89,7 @@ export default {
 </script>
 
 <style scoped>
-.n95Page1 {
+.disinfectantsPage1 {
   min-height: 100vh;
   margin-top: 3.5rem;
   padding-top: 1rem;

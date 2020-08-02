@@ -10,7 +10,7 @@
     </div>
     <div class="footerNavigation">
       <h1>CATEGORIES</h1>
-      <router-link to="/">Masks</router-link> |
+      <router-link to="/FindPPE/N95">Masks</router-link> |
       <router-link to="/">Sanatizers</router-link> |
       <router-link to="/">Disinfectants</router-link> |
       <router-link to="/">Other</router-link>

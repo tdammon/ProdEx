@@ -2,9 +2,12 @@
   <div class="productCard">
     <img class="productImage" />
     <div class="cardText">
-      <div>
-        <div class="cardTitle">{{ title }}</div>
-        <div class="modelNumber">{{ model }}</div>
+      <div className="cardTitleHeader">
+        <div>
+          <div class="sellingFast">Selling Fast</div>
+          <div class="cardTitle">{{ title }}</div>
+          <div class="modelNumber">{{ model }}</div>
+        </div>
       </div>
       <div class="cardCategories">
         <div class="categoryPair">
@@ -20,7 +23,7 @@
           <div class="location">{{ location }}</div>
         </div>
       </div>
-      <div class="buyNow">But on Amazon -></div>
+      <div class="buyNow">Buy on Amazon -></div>
     </div>
   </div>
 </template>
@@ -56,6 +59,8 @@ export default {
   margin-right: 1rem;
   width: 100%;
 }
+.cardTitleHeader {
+}
 .cardTitle {
   font-size: 0.85rem;
   line-height: 1rem;
@@ -68,6 +73,11 @@ export default {
   font-size: 0.75rem;
   text-align: left;
   color: #b3b3b3;
+}
+.sellingFast {
+  float: right;
+  font-size: 0.75rem;
+  color: #19a784;
 }
 .productCardCategory {
   font-size: 0.75rem;
@@ -83,6 +93,8 @@ export default {
 .buyNow {
   margin-top: 1rem;
   text-align: left;
+  font-size: 14px;
+  font-weight: bold;
 }
 .brand {
   text-align: left;

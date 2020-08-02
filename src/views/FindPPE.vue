@@ -12,7 +12,7 @@ import FindPPEPage1 from "@/components/FindPPEPage1.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "Find PPE",
+  name: "FindPPE",
   components: {
     Header,
     FindPPEPage1,
