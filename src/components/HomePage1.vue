@@ -35,6 +35,7 @@ export default {
   margin-top: 3.5rem;
   height: 95vh;
   width: 100%;
+  left: 0;
 }
 .homePageOneImg {
   height: auto;
