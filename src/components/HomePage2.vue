@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .homePageTwo {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f7f8fc;
   padding-top: 3rem;
 }

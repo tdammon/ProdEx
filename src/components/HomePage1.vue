@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .homePageOne {
   margin-top: 3.5rem;
-  height: 95vh;
+  min-height: 95vh;
   width: 100%;
   left: 0;
 }

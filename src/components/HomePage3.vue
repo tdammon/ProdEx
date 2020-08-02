@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 .homePageThree {
-  height: 80vh;
+  min-height: 80vh;
 }
 .homePageThreeNavigation {
   margin-top: 2rem;
