@@ -1,6 +1,6 @@
 <template>
   <div class="equiptmentCard">
-    <img class="equiptmentImage" />
+    <img class="equiptmentImage" :src="icon" />
     <div class="cardText">
       <div class="cardTitle">{{ title }}</div>
       <div @click="navTo" class="findNow">Find Now -></div>
@@ -20,7 +20,7 @@ export default {
       this.$router.push(`/FindPPE/${this.title}`);
     }
   },
-  props: ["title", "content"]
+  props: ["title", "content", "icon"]
 };
 </script>
 
@@ -37,7 +37,7 @@ export default {
 .equiptmentImage {
   height: 5rem;
   width: 5rem;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 .cardText {
   margin-left: 1rem;

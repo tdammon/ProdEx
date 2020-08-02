@@ -7,13 +7,17 @@
       <button class="sortButton">SORT</button>
     </div>
     <div class="card" v-for="card in cards" :key="card.index">
-      <EquiptmentCard :title="card.title" />
+      <EquiptmentCard :title="card.title" :icon="card.icon" />
     </div>
   </div>
 </template>
 
 <script>
 import EquiptmentCard from "./EquiptmentCard.vue";
+import mask from "@/assets/mask.jpg";
+import n95 from "@/assets/n95.jpg";
+import disinfectant from "@/assets/disinfectant.jpg";
+import sanitizer from "@/assets/sanitizer.jpg";
 
 export default {
   name: "FindPPE1",
@@ -24,16 +28,24 @@ export default {
     return {
       cards: [
         {
-          title: "Masks"
+          title: "Masks",
+          alt: "mask",
+          icon: mask
         },
         {
-          title: "N95"
+          title: "N95",
+          alt: "n95 mask",
+          icon: n95
         },
         {
-          title: "Disinfectants"
+          title: "Disinfectants",
+          alt: "disinfectant",
+          icon: disinfectant
         },
         {
-          title: "Sanitizers"
+          title: "Sanitizers",
+          alt: "sanitizer",
+          icon: sanitizer
         },
         {
           title: "Other?"

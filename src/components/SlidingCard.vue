@@ -1,6 +1,8 @@
 <template>
   <div class="slidingCard">
-    <div class="photoHolder"></div>
+    <div class="photoHolder">
+      <img class="homePageOneImg" :alt="alt" :src="icon" />
+    </div>
     <h1>{{ title }}</h1>
     <p>{{ content }}</p>
   </div>
@@ -12,7 +14,7 @@ export default {
   data() {
     return {};
   },
-  props: ["title", "content"]
+  props: ["title", "content", "icon", "alt"]
 };
 </script>
 
@@ -27,10 +29,16 @@ export default {
 }
 .photoHolder {
   height: 10rem;
+  line-height: 10rem;
   border-radius: 90px;
   background-color: #f7f8fc;
   width: 8rem;
   margin: auto;
+}
+img {
+  vertical-align: middle;
+  height: 75px;
+  width: 75px;
 }
 h1 {
   font-size: 18px;

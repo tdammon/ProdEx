@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .homePageOne {
   margin-top: 3.5rem;
-  height: 100vh;
+  height: 95vh;
   width: 100%;
 }
 .homePageOneImg {
@@ -51,6 +51,7 @@ export default {
   height: 3rem;
   font-size: 1rem;
   font-weight: bold;
+  margin-top: 1rem;
 }
 h1 {
   font-size: 1.5rem;

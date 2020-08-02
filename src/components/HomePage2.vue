@@ -4,7 +4,11 @@
     <p>Explore what we can do for you.</p>
     <div class="cardHolder">
       <div class="cardSpace" v-for="card in cards" :key="card.index">
-        <SlidingCard :title="card.title" :content="card.content" />
+        <SlidingCard
+          :title="card.title"
+          :content="card.content"
+          :icon="card.icon"
+        />
       </div>
     </div>
     <button class="loadButton">Load More...</button>
@@ -13,6 +17,11 @@
 
 <script>
 import SlidingCard from "./SlidingCard.vue";
+import doctorIcon from "@/assets/doctorIcon.png";
+import classroomIcon from "@/assets/classroomIcon.png";
+import turkeyIcon from "@/assets/turkeyIcon.png";
+import buildingIcon from "@/assets/buildingIcon.png";
+
 export default {
   name: "HomePage2",
   components: {
@@ -23,19 +32,27 @@ export default {
       cards: [
         {
           title: "Food Services",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          alt: "turkey",
+          icon: turkeyIcon
         },
         {
           title: "Assisted Living",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          alt: "doctor",
+          icon: doctorIcon
         },
         {
           title: "Retail",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          alt: "store",
+          icon: buildingIcon
         },
         {
           title: "Education",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          alt: "teacher",
+          icon: classroomIcon
         }
       ]
     };

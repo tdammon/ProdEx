@@ -10,10 +10,10 @@
     </div>
     <div class="footerNavigation">
       <h1>CATEGORIES</h1>
-      <router-link to="/FindPPE/N95">Masks</router-link> |
-      <router-link to="/">Sanatizers</router-link> |
-      <router-link to="/">Disinfectants</router-link> |
-      <router-link to="/">Other</router-link>
+      <router-link to="/FindPPE/Masks">Masks</router-link> |
+      <router-link to="/FindPPE/Sanitizers">Sanitizers</router-link> |
+      <router-link to="/FindPPE/Disinfectants">Disinfectants</router-link> |
+      <router-link to="/FindPPE/Other">Other</router-link>
     </div>
     <div class="footerNavigation">
       <h1>ACCOUNT</h1>
