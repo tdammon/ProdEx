@@ -74,9 +74,8 @@ export default {
   scroll-snap-type: x mandatory;
 }
 .cardSpace {
-  padding: 2.5rem;
-  background-color: #ffffff;
-  margin-left: 1rem;
+  padding: 1rem;
+  background-color: #f7f8fc;
 }
 .loadButton {
   background-color: #10182f;
