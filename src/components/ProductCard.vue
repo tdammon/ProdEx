@@ -59,8 +59,6 @@ export default {
   margin-right: 1rem;
   width: 100%;
 }
-.cardTitleHeader {
-}
 .cardTitle {
   font-size: 0.85rem;
   line-height: 1rem;
