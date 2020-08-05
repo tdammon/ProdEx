@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     navTo(active) {
-      this.$router.push(`FindPPE/${active}`);
+      this.$router.push(`category/${active.toLowerCase()}`);
     },
     setText(category) {
       if (category === "Masks") {
@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 .homePageThree {
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 .homePageThreeNavigation {
   margin-top: 2rem;
@@ -109,7 +109,7 @@ export default {
   display: flex;
   margin-left: 1.25rem;
   padding: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 p {
   font-size: 1rem;

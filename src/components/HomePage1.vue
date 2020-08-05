@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     navToPPE() {
-      this.$router.push("FindPPE");
+      this.$router.push("category");
     }
   }
 };
@@ -33,7 +33,6 @@ export default {
 <style scoped>
 .homePageOne {
   margin-top: 3.5rem;
-  min-height: 95vh;
   width: 100%;
   left: 0;
 }
@@ -53,6 +52,7 @@ export default {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 h1 {
   font-size: 1.5rem;

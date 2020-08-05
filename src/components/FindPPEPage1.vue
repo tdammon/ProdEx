@@ -63,10 +63,9 @@ export default {
 
 <style scoped>
 .findPPEOne {
-  min-height: 100vh;
   margin-top: 3.5rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   width: 100%;
   background-color: #f7f8fc;
 }
@@ -83,7 +82,7 @@ export default {
 }
 .buttonHolder {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }

@@ -4,34 +4,33 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
+const routes = [{
     path: "/",
     name: "Home",
     component: Home
   },
   {
-    path: "/FindPPE",
+    path: "/category",
     name: "FindPPE",
     component: () => import("../views/FindPPE.vue")
   },
   {
-    path: "/FindPPE/N95",
+    path: "/category/n95",
     name: "N95",
     component: () => import("../views/N95.vue")
   },
   {
-    path: "/FindPPE/Masks",
+    path: "/category/masks",
     name: "Masks",
     component: () => import("../views/Masks.vue")
   },
   {
-    path: "/FindPPE/Disinfectants",
+    path: "/category/disinfectants",
     name: "Disinfectants",
     component: () => import("../views/Disinfectants.vue")
   },
   {
-    path: "/FindPPE/Sanitizers",
+    path: "/category/sanitizers",
     name: "Sanitizers",
     component: () => import("../views/Sanitizers.vue")
   }

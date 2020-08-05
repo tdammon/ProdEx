@@ -13,11 +13,13 @@
 export default {
   name: "EquiptmentCard",
   data() {
-    return {};
+    return {
+      urlRoute: this.title
+    };
   },
   methods: {
     navTo() {
-      this.$router.push(`/FindPPE/${this.title}`);
+      this.$router.push(`/category/${this.urlRoute.toLowerCase()}`);
     }
   },
   props: ["title", "content", "icon"]

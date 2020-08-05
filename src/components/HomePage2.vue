@@ -62,9 +62,9 @@ export default {
 
 <style scoped>
 .homePageTwo {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #f7f8fc;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .cardHolder {
   display: flex;

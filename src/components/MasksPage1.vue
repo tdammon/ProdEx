@@ -81,7 +81,7 @@ export default {
       this.$router.push("/");
     },
     navToPPE() {
-      this.$router.push("/FindPPE");
+      this.$router.push("/category");
     }
   }
 };
@@ -89,7 +89,6 @@ export default {
 
 <style scoped>
 .masksPage1 {
-  min-height: 100vh;
   margin-top: 3.5rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -109,7 +108,7 @@ export default {
 }
 .buttonHolder {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
