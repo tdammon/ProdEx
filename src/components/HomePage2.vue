@@ -73,8 +73,14 @@ export default {
   scroll-snap-type: mandatory;
   scroll-snap-type: x mandatory;
 }
+.cardHolder > :last-child {
+  padding-right: 20%;
+}
+.cardHolder > :first-child {
+  padding-left: 20%;
+}
 .cardSpace {
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: #f7f8fc;
 }
 .loadButton {
