@@ -1,6 +1,11 @@
 <template>
   <div class="header">
-    <input class="headerInput" v-model="search" />
+    <input class="headerInput" v-model="search" placeholder="Search" />
+    <img
+      class="hamburgerMenu"
+      alt="Hamburger Menu"
+      src="../assets/hamburgerMenu.png"
+    />
   </div>
 </template>
 
@@ -9,7 +14,7 @@ export default {
   name: "Header",
   data() {
     return {
-      search: "Search"
+      search: ""
     };
   }
 };
@@ -18,6 +23,8 @@ export default {
 <style scoped>
 .header {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,9 +34,15 @@ export default {
   z-index: 999;
 }
 .headerInput {
-  margin: auto;
-  width: 90%;
+  width: 80%;
   height: 1.5rem;
   border-radius: 4px;
+}
+.hamburgerMenu {
+  margin-left: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-self: center;
 }
 </style>
