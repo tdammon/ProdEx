@@ -80,7 +80,7 @@ export default {
   padding-left: 20%;
 }
 .cardSpace {
-  padding: 0.75rem;
+  padding: 0.5rem;
   background-color: #f7f8fc;
 }
 .loadButton {

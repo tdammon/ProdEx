@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .slidingCard {
   background-color: #ffffff !important;
-  padding: 2.5rem;
+  padding: 2rem 1rem 2rem 1rem;
   width: 60vw;
   position: relative;
   scroll-snap-align: center;
