@@ -16,22 +16,22 @@ const routes = [
     component: () => import("../views/FindPPE.vue")
   },
   {
-    path: "/category/n95",
+    path: "/category/:id",
     name: "N95",
     component: () => import("../views/N95.vue")
   },
   {
-    path: "/category/masks",
+    path: "/category/:id",
     name: "Masks",
     component: () => import("../views/Masks.vue")
   },
   {
-    path: "/category/disinfectants",
+    path: "/category/:id",
     name: "Disinfectants",
     component: () => import("../views/Disinfectants.vue")
   },
   {
-    path: "/category/sanitizers",
+    path: "/category/:id",
     name: "Sanitizers",
     component: () => import("../views/Sanitizers.vue")
   }
